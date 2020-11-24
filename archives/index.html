@@ -1,44 +1,271 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang }}" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+<html lang="zh">
 <head>
-  <meta charset="utf-8">
-  <title>{{ head_title() }}</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="{{ head_keywords() }}">
-  <meta name="description" content="{{ head_description() }}">
-  {{ partial('partial/og') }}
-  <!-- Canonical links -->
-  <link rel="canonical" href="{{ url }}">
-  <!-- Alternative links -->
-  <!-- CSS and JS-->
-  {{ head_jscss({js: true})}}
-  <!-- RSS -->
-  {{ feed_tag('atom.xml') }}
-  <link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon" />
-<meta name="generator" content="Hexo 5.2.0"></head>
-<body>
-  <!-- header -->
-  {{ partial('partial/header') }}
-  <!-- main -->
-  {{ body }}
-  <!-- footer -->
-  {{ partial('partial/footer') }}
-  <!-- fixed action bar -->
-  {{ partial('partial/fab') }}
-  <!-- after footer, some 3rd script place here -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>Archives | 我的笔记</title>
+    <meta name="description" content="A minimal hexo theme."/>
+    <meta name="keywords" content="hexo,theme,otakism,otaku"/>
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="google-site-verification" content=""/>
+    <meta name="baidu-site-verification" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:type" content="website">
+<meta property="og:title" content="我的笔记">
+<meta property="og:url" content="https://github.com/xiangbin19/xiangbin19.github.io/archives/index.html">
+<meta property="og:site_name" content="我的笔记">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="xiangbin">
+<meta name="twitter:card" content="summary">
+    
+
+    <!-- Favicon -->
+    
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto:300,400,700" rel="stylesheet">
+
+    
+<link rel="stylesheet" href="/style.css">
+
     <script>
-    var hljs_labels = {
-        left: "{{__('hljs.left')}}",
-        right: "{{__('hljs.right')}}",
-        copy: "{{__('hljs.copy')}}"
-    }
+      function setLoadingBarProgress(num) {
+        document.getElementById('loading-bar').style.width = num + "%";
+      }
     </script>
-    {{ js('js/hljs.js') }}
-    {{ js('js/script.js')}}
-    {{ partial('partial/analytics') }}
-    {{ partial('partial/baidu_push') }}
-    {{ partial('partial/baidu_search_script') }}
-    {{ partial('partial/lc') }}
+
+    
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+<body>
+
+<div id="loading-bar-wrapper">
+  <div id="loading-bar"></div>
+</div>
+
+<script>setLoadingBarProgress(20)</script>
+
+<div id="site-wrapper">
+
+    <header id="header">
+    <div id="header-wrapper" class="clearfix">
+        <a id="logo" href="/">
+            <img src="/img/logo.png"/>
+            <span id="site-desc">
+                otaku keeps alive
+            </span>
+        </a>
+        <button id="site-nav-switch">
+            <span class="icon icon-menu"></span>
+        </button>
+    </div>
+</header>
+    <script>setLoadingBarProgress(40);</script>
+
+    <main id="main" role="main">
+        
+    <article id="archive-page"
+             class="post article white-box">
+        <h2 class="title">
+            <a href="/archives">
+                Archives
+            </a>
+        </h2>
+        <section class="archive">
+            
+            <h3 class="archive-item archive-year">
+                <a id="archive-year-2020" href="/archives/2020/">
+                    2020
+                </a>
+            </h3>
+            
+            <div class="archive-item archive-post">
+                <a href="/2020/11/23/hello-world/">
+                    <time>11-23</time>
+                    <span class="title">Hello World</span>
+                </a>
+            </div>
+            
+        </section>
+    </article>
+
+    
+
+
+        <script>setLoadingBarProgress(60);</script>
+    </main>
+
+    <footer id="footer" class="clearfix">
+
+    
+
+    <div class="social-wrapper">
+        
+            
+                <a href="https://github.com/artchen" class="social github"
+                   target="_blank" rel="external">
+                    <span class="icon icon-github"></span>
+                </a>
+            
+                <a href="/atom.xml" class="social rss"
+                   target="_blank" rel="external">
+                    <span class="icon icon-rss"></span>
+                </a>
+            
+        
+    </div>
+
+    <div class="theme-by">Theme <span class="codename">Memory</span> designed by <a href="https://artifact.me/"
+                                                                                    target="_blank">Art Chen</a>.
+    </div>
+    <div>&copy; <a href="/">我的笔记</a></div>
+
+</footer>
+
+
+    <script>setLoadingBarProgress(80);</script>
+    <div class="overlay"></div>
+</div>
+
+<div class="site-sidebar" id="site-sidebar">
+
+    
+
+    <div class="sidebar-switch clearfix "
+         style="display: none">
+        <a class="dark-btn active" data-toggle="toc">
+            <span class="icon icon-list"></span>
+            <span class="text">Index</span>
+        </a>
+        <a class="dark-btn" data-toggle="bio">
+            <span class="icon icon-person"></span>
+            <span class="text">Bio</span>
+        </a>
+    </div>
+
+    <div class="site-toc "
+         style="display: none">
+        
+            <div class="no-index">No Index</div>
+        
+    </div>
+
+    <div class="site-bio show"
+         style="display: block">
+
+        <div class="about-me clearfix">
+            <div class="avatar">
+                <img src="/img/avatar.png"/>
+            </div>
+            <div class="info">
+                <a class="name dark-btn" href="/about">
+                    xiangbin
+                </a>
+            </div>
+            <div class="info">
+                <span class="item desc">
+                    
+                </span>
+            </div>
+        </div>
+
+        <div class="menu section">
+            <ul class="clearfix">
+                
+                    <li class="left">
+                        <a href="/about"
+                           onfocus="this.blur();"
+                           class="nav-about dark-btn block">
+                            About
+                        </a>
+                    </li>
+                
+                    <li class="right">
+                        <a href="/archives"
+                           onfocus="this.blur();"
+                           class="nav-archives dark-btn block">
+                            Archives
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="shortcuts">
+        <a href="#header" class="top window-nav dark-btn" id="go-top">
+            <span class="icon icon-chevron-thin-up"></span>
+        </a>
+        <a class="close dark-btn" id="sidebar-close">
+            <span class="icon icon-close"></span>
+        </a>
+        <a href="#footer" class="top window-nav dark-btn" id="go-bottom">
+            <span class="icon icon-chevron-thin-down"></span>
+        </a>
+    </div>
+
+</div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
+
+
+<script src="/js/jquery.fitvids.js"></script>
+
+<script>
+  var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+  var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+  var ALGOLIA_API_KEY = "";
+  var ALGOLIA_APP_ID = "";
+  var ALGOLIA_INDEX_NAME = "";
+  var AZURE_SERVICE_NAME = "";
+  var AZURE_INDEX_NAME = "";
+  var AZURE_QUERY_KEY = "";
+  var SEARCH_SERVICE = "";
+  var universalSearchConfig = {};
+  if (SEARCH_SERVICE === 'google') {
+    universalSearchConfig = {
+      searchService: SEARCH_SERVICE,
+      apiKey: GOOGLE_CUSTOM_SEARCH_API_KEY,
+      engineId: GOOGLE_CUSTOM_SEARCH_ENGINE_ID,
+      imagePath: "/img/"
+    };
+  } else if (SEARCH_SERVICE === 'algolia') {
+    universalSearchConfig = {
+      searchService: SEARCH_SERVICE,
+      apiKey: ALGOLIA_API_KEY,
+      appId: ALGOLIA_APP_ID,
+      indexName: ALGOLIA_INDEX_NAME,
+      imagePath: "/img/"
+    };
+  } else if (SEARCH_SERVICE === 'azure') {
+    universalSearchConfig = {
+      searchService: SEARCH_SERVICE,
+      serviceName: AZURE_SERVICE_NAME,
+      indexName: AZURE_INDEX_NAME,
+      apiKey: AZURE_QUERY_KEY,
+      imagePath: "/img/"
+    };
+  }
+</script>
+
+<script src="/js/app.js"></script>
+
+
+<script src="/js/search.js"></script>
+
+
+
+
+
+<script>setLoadingBarProgress(100);</script>
+
 </body>
 </html>
