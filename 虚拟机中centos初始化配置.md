@@ -1,7 +1,6 @@
 # 1day-1的笔记
 
 # Linux初始化配置
-
 + 安装bash shell命令提示符
 
 ```
